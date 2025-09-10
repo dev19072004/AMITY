@@ -1,0 +1,13 @@
+# Core app
+streamlit>=1.30.0
+
+# Data handling
+pandas>=1.5.0
+numpy>=1.21.0
+
+# ML & preprocessing
+scikit-learn>=1.2.0
+scipy>=1.7.0
+
+# Visualizations
+plotly>=5.14.0
