@@ -14,9 +14,9 @@ import streamlit as st
 @st.cache_data
 def load_data():
     # Load datasets
-    movies = pd.read_csv("Movies.csv",encoding='latin-1',errors='ignore')
-    ratings = pd.read_csv("Ratings.csv",encoding='latin-1',errors='ignore')
-    users = pd.read_csv("Users.csv",encoding='latin-1',errors='ignore')
+    movies = pd.read_csv("Movies.csv",encoding='utf-8-sig',errors='ignore')
+    ratings = pd.read_csv("Ratings.csv",encoding='utf-8-sig',errors='ignore')
+    users = pd.read_csv("Users.csv",encoding='utf-8-sig',errors='ignore')
 
     movies['Year'] = movies['Title'].str.extract(r'(\d{4})')
     movies['Year'] = pd.to_numeric(movies['Year'], errors='coerce')
