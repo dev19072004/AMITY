@@ -1,0 +1,5 @@
+streamlit>=1.33
+scikit-learn>=1.4,<1.6
+numpy>=1.23
+scipy>=1.10
+pandas>=1.5
