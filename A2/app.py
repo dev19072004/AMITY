@@ -11,8 +11,8 @@ import plotly.graph_objects as go
 
 # ------------------ Config ------------------
 st.set_page_config(page_title="COVID-19 Analysis", page_icon="🦠", layout="wide")
-COVID_PATH = "covid_19_data.csv"
-LINE_PATH = "covid19_line_list_data_modified.csv"
+COVID_PATH = "covid_19_data (1).csv"
+LINE_PATH = "covid19_line_list_data_modified (1).csv"
 
 # ------------------ Helpers ------------------
 def load_data(covid_path=COVID_PATH, line_path=LINE_PATH):
