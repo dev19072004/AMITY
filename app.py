@@ -1,6 +1,8 @@
 #importing the libraries
 import pandas as pd
-import numpy as np
+# import numpy as np
+# import seaborn as sns
+# import matplotlib.pyplot as plt
 
 from sklearn.cluster import KMeans
 from sklearn.preprocessing import StandardScaler
@@ -12,9 +14,9 @@ import streamlit as st
 @st.cache_data
 def load_data():
     # Load datasets
-    movies = pd.read_csv("Movies.csv",encoding='latin-1')
-    ratings = pd.read_csv("Ratings.csv",encoding='latin-1')
-    users = pd.read_csv("Users.csv",encoding='latin-1')
+    movies = pd.read_csv("Movies.csv",encoding='latin-1',errors='ignore')
+    ratings = pd.read_csv("Ratings.csv",encoding='latin-1',errors='ignore')
+    users = pd.read_csv("Users.csv",encoding='latin-1',errors='ignore')
 
     movies['Year'] = movies['Title'].str.extract(r'(\d{4})')
     movies['Year'] = pd.to_numeric(movies['Year'], errors='coerce')
